@@ -108,6 +108,7 @@ class Admin_Menu {
 
 			add_filter( 'admin_footer_text', array( $this, 'add_footer_link' ), 99 );
 		}
+
 	}
 
 	/**
@@ -198,7 +199,12 @@ class Admin_Menu {
 
 		wp_enqueue_style( 'wp-components' );
 
-		$theme    = wp_get_theme();
+		$theme = wp_get_theme();
+
+		$theme_data          = \WP_Theme_JSON_Resolver::get_theme_data();
+		$theme_settings      = $theme_data->get_settings();
+		$theme_font_families = isset( $theme_settings['typography']['fontFamilies']['theme'] ) && is_array( $theme_settings['typography']['fontFamilies']['theme'] ) ? $theme_settings['typography']['fontFamilies']['theme'] : array();
+
 		$localize = apply_filters(
 			'uag_react_admin_localize',
 			array(
@@ -222,7 +228,7 @@ class Admin_Menu {
 				'spectra_pro_ver'          => defined( 'SPECTRA_PRO_VER' ) ? SPECTRA_PRO_VER : null,
 				'spectra_custom_fonts'     => apply_filters( 'spectra_system_fonts', array() ),
 				'is_allow_registration'    => (bool) get_option( 'users_can_register' ),
-				'insta_refresh_users'      => apply_filters( 'uag_refresh_instagram_users', true ),
+				'theme_fonts'              => $theme_font_families,
 			)
 		);
 

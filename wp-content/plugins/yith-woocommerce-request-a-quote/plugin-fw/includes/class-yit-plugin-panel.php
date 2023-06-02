@@ -332,7 +332,7 @@ if ( ! class_exists( 'YIT_Plugin_Panel' ) ) {
 		 * @return void
 		 * @since 4.0.0
 		 */
-		protected function add_notice( string $message, string $type = 'info' ) {
+		public function add_notice( string $message, string $type = 'info' ) {
 			$this->notices[] = array(
 				'message' => $message,
 				'type'    => $type,
@@ -841,7 +841,7 @@ if ( ! class_exists( 'YIT_Plugin_Panel' ) ) {
 		 * @return bool Whether panel has help tab or no.
 		 */
 		public function has_help_tab() {
-			return apply_filters( 'yith_plugin_fw_panel_has_help_tab', ! empty( $this->settings['help_tab'] ) && ( ! $this->is_free() || ! empty( $this->settings['help_tab']['show_on_free'] ) ), $this );
+			return apply_filters( 'yith_plugin_fw_panel_has_help_tab', isset( $this->settings['help_tab'] ) && is_array( $this->settings['help_tab'] ) && ( ! $this->is_free() || ! empty( $this->settings['help_tab']['show_on_free'] ) ), $this );
 		}
 
 
@@ -874,7 +874,7 @@ if ( ! class_exists( 'YIT_Plugin_Panel' ) ) {
 			// translators: 1. Plugin name.
 			$default_title       = $is_premium ? _x( 'Thank you for purchasing %s!', 'Help tab default title', 'yith-plugin-fw' ) : _x( 'Thank you for using %s!', 'Help tab default title', 'yith-plugin-fw' );
 			$default_doc_url     = $this->get_doc_url();
-			$default_support_url = $is_extended ? add_query_arg( array( 'page' => 'bluehost' ), admin_url( 'admin.php' ) ) . '#/help' : 'https://yithemes.com/my-account/support/submit-a-ticket/';
+			$default_support_url = $is_extended ? trailingslashit( $default_doc_url ) . 'overview/need-support/' : 'https://yithemes.com/my-account/support/submit-a-ticket/';
 
 			// parse options.
 			$options = wp_parse_args(
@@ -979,7 +979,12 @@ if ( ! class_exists( 'YIT_Plugin_Panel' ) ) {
 		protected function get_doc_url() {
 			$plugin_slug = sanitize_title( $this->settings['plugin_slug'] ?? '' );
 			if ( $plugin_slug ) {
-				return $this->is_extended() ? "https://www.bluehost.com/help/article/{$plugin_slug}/" : "https://docs.yithemes.com/{$plugin_slug}/";
+				$doc_slug = $plugin_slug;
+				if ( $this->is_extended() ) {
+					$doc_slug .= '-extended';
+				}
+
+				return "https://docs.yithemes.com/{$doc_slug}/";
 			}
 
 			return '';

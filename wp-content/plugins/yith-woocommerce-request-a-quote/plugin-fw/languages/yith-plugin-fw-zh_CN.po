@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YITH Framework\n"
 "Report-Msgid-Bugs-To: YITH <plugins@yithemes.com>\n"
-"POT-Creation-Date: 2023-04-12 13:08:17+00:00\n"
+"POT-Creation-Date: 2023-04-28 10:01:45+00:00\n"
 "PO-Revision-Date: 2022-06-29 13:12:18+0000\n"
 "Language: zh\n"
 "MIME-Version: 1.0\n"
@@ -114,61 +114,61 @@ msgstr "設定"
 msgid "How to install premium version"
 msgstr "如何安裝高級版"
 
-#: includes/class-yit-plugin-panel.php:1132
+#: includes/class-yit-plugin-panel.php:1137
 msgid "Read the <mark>plugin documentation</mark>"
 msgstr ""
 
-#: includes/class-yit-plugin-panel.php:1133
+#: includes/class-yit-plugin-panel.php:1138
 msgid "Learn what you can really do with this powerful tool"
 msgstr ""
 
-#: includes/class-yit-plugin-panel.php:1143
+#: includes/class-yit-plugin-panel.php:1148
 msgid "Watch our <mark>\"First Steps\" video</mark>"
 msgstr ""
 
-#: includes/class-yit-plugin-panel.php:1144
+#: includes/class-yit-plugin-panel.php:1149
 msgid "See how it works before you start using it"
 msgstr ""
 
-#: includes/class-yit-plugin-panel.php:1459
+#: includes/class-yit-plugin-panel.php:1464
 msgid ""
 "The element you have entered already exists. Please, enter another name."
 msgstr "你輸入的這個元素已經存在，請輸入另一個名稱"
 
-#: includes/class-yit-plugin-panel.php:1460
+#: includes/class-yit-plugin-panel.php:1465
 msgid "Settings saved"
 msgstr "設定已經儲存"
 
-#: includes/class-yit-plugin-panel.php:1461
+#: includes/class-yit-plugin-panel.php:1466
 msgid "Settings reset"
 msgstr "重置設定"
 
-#: includes/class-yit-plugin-panel.php:1462
+#: includes/class-yit-plugin-panel.php:1467
 msgid "Element deleted correctly."
 msgstr "元素已被確實刪除"
 
-#: includes/class-yit-plugin-panel.php:1463
-#: includes/class-yit-plugin-panel.php:1464
+#: includes/class-yit-plugin-panel.php:1468
+#: includes/class-yit-plugin-panel.php:1469
 msgid "Element updated correctly."
 msgstr "元素已正確更新。"
 
-#: includes/class-yit-plugin-panel.php:1465
+#: includes/class-yit-plugin-panel.php:1470
 msgid "Database imported correctly."
 msgstr "資料庫已被正確匯入"
 
-#: includes/class-yit-plugin-panel.php:1466
+#: includes/class-yit-plugin-panel.php:1471
 msgid "An error has occurred during import. Please try again."
 msgstr "匯入過程中發生一個錯誤，請再試一次"
 
-#: includes/class-yit-plugin-panel.php:1467
+#: includes/class-yit-plugin-panel.php:1472
 msgid "The added file is not valid."
 msgstr "添加的檔案無效"
 
-#: includes/class-yit-plugin-panel.php:1468
+#: includes/class-yit-plugin-panel.php:1473
 msgid "Sorry, import is disabled."
 msgstr "抱歉，匯入功能被關閉"
 
-#: includes/class-yit-plugin-panel.php:1469
+#: includes/class-yit-plugin-panel.php:1474
 msgid "Sorting successful."
 msgstr "已順利排序"
 
@@ -775,12 +775,12 @@ msgstr "您確定要刪除 \"%s\" 嗎?"
 msgid "Further actions"
 msgstr "進一步動作"
 
-#: yit-plugin.php:233
+#: yit-plugin.php:243
 msgid "License"
 msgstr "授權"
 
 #. translators: 1. Plugin(s) name(s).
-#: yit-plugin.php:272
+#: yit-plugin.php:282
 msgid ""
 "%s was deactivated as you're running an higher tier version of the same "
 "plugin."
@@ -1220,7 +1220,7 @@ msgctxt "Plugin Row Meta"
 msgid "Premium version"
 msgstr "高級版本"
 
-#: yit-plugin.php:229
+#: yit-plugin.php:239
 msgctxt "Action links"
 msgid "Settings"
 msgstr "設定"

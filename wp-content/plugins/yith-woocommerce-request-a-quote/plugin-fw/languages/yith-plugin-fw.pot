@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: YITH <plugins@yithemes.com>\n"
-"POT-Creation-Date: 2023-04-12 13:08:17+00:00\n"
+"POT-Creation-Date: 2023-04-28 10:01:45+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -123,60 +123,60 @@ msgstr ""
 msgid "How to install premium version"
 msgstr ""
 
-#: includes/class-yit-plugin-panel.php:1132
+#: includes/class-yit-plugin-panel.php:1137
 msgid "Read the <mark>plugin documentation</mark>"
 msgstr ""
 
-#: includes/class-yit-plugin-panel.php:1133
+#: includes/class-yit-plugin-panel.php:1138
 msgid "Learn what you can really do with this powerful tool"
 msgstr ""
 
-#: includes/class-yit-plugin-panel.php:1143
+#: includes/class-yit-plugin-panel.php:1148
 msgid "Watch our <mark>\"First Steps\" video</mark>"
 msgstr ""
 
-#: includes/class-yit-plugin-panel.php:1144
+#: includes/class-yit-plugin-panel.php:1149
 msgid "See how it works before you start using it"
 msgstr ""
 
-#: includes/class-yit-plugin-panel.php:1459
+#: includes/class-yit-plugin-panel.php:1464
 msgid "The element you have entered already exists. Please, enter another name."
 msgstr ""
 
-#: includes/class-yit-plugin-panel.php:1460
+#: includes/class-yit-plugin-panel.php:1465
 msgid "Settings saved"
 msgstr ""
 
-#: includes/class-yit-plugin-panel.php:1461
+#: includes/class-yit-plugin-panel.php:1466
 msgid "Settings reset"
 msgstr ""
 
-#: includes/class-yit-plugin-panel.php:1462
+#: includes/class-yit-plugin-panel.php:1467
 msgid "Element deleted correctly."
 msgstr ""
 
-#: includes/class-yit-plugin-panel.php:1463
-#: includes/class-yit-plugin-panel.php:1464
+#: includes/class-yit-plugin-panel.php:1468
+#: includes/class-yit-plugin-panel.php:1469
 msgid "Element updated correctly."
 msgstr ""
 
-#: includes/class-yit-plugin-panel.php:1465
+#: includes/class-yit-plugin-panel.php:1470
 msgid "Database imported correctly."
 msgstr ""
 
-#: includes/class-yit-plugin-panel.php:1466
+#: includes/class-yit-plugin-panel.php:1471
 msgid "An error has occurred during import. Please try again."
 msgstr ""
 
-#: includes/class-yit-plugin-panel.php:1467
+#: includes/class-yit-plugin-panel.php:1472
 msgid "The added file is not valid."
 msgstr ""
 
-#: includes/class-yit-plugin-panel.php:1468
+#: includes/class-yit-plugin-panel.php:1473
 msgid "Sorry, import is disabled."
 msgstr ""
 
-#: includes/class-yit-plugin-panel.php:1469
+#: includes/class-yit-plugin-panel.php:1474
 msgid "Sorting successful."
 msgstr ""
 
@@ -772,11 +772,11 @@ msgstr ""
 msgid "Further actions"
 msgstr ""
 
-#: yit-plugin.php:233
+#: yit-plugin.php:243
 msgid "License"
 msgstr ""
 
-#: yit-plugin.php:272
+#: yit-plugin.php:282
 #. translators: 1. Plugin(s) name(s).
 msgid ""
 "%s was deactivated as you're running an higher tier version of the same "
@@ -1211,7 +1211,7 @@ msgctxt "Plugin Row Meta"
 msgid "Premium version"
 msgstr ""
 
-#: yit-plugin.php:229
+#: yit-plugin.php:239
 msgctxt "Action links"
 msgid "Settings"
 msgstr ""
