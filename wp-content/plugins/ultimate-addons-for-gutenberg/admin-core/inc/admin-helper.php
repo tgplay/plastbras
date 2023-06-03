@@ -56,6 +56,7 @@ class Admin_Helper {
 			'enable_masonry_gallery'             => \UAGB_Admin_Helper::get_admin_settings_option( 'uag_enable_masonry_gallery', 'enabled' ),
 			'enable_block_responsive'            => \UAGB_Admin_Helper::get_admin_settings_option( 'uag_enable_block_responsive', 'enabled' ),
 			'enable_dynamic_content'             => \UAGB_Admin_Helper::get_admin_settings_option( 'uag_enable_dynamic_content', 'enabled' ),
+			'enable_animations_extension'        => \UAGB_Admin_Helper::get_admin_settings_option( 'uag_enable_animations_extension', 'enabled' ),
 			'select_font_globally'               => \UAGB_Admin_Helper::get_admin_settings_option( 'uag_select_font_globally', array() ),
 			'load_select_font_globally'          => \UAGB_Admin_Helper::get_admin_settings_option( 'uag_load_select_font_globally', 'disabled' ),
 			'load_fse_font_globally'             => \UAGB_Admin_Helper::get_admin_settings_option( 'uag_load_fse_font_globally', 'disabled' ),
@@ -63,6 +64,7 @@ class Admin_Helper {
 			'collapse_panels'                    => \UAGB_Admin_Helper::get_admin_settings_option( 'uag_collapse_panels', 'enabled' ),
 			'copy_paste'                         => \UAGB_Admin_Helper::get_admin_settings_option( 'uag_copy_paste', 'enabled' ),
 			'preload_local_fonts'                => \UAGB_Admin_Helper::get_admin_settings_option( 'uag_preload_local_fonts', 'disabled' ),
+			'btn_inherit_from_theme'             => \UAGB_Admin_Helper::get_admin_settings_option( 'uag_btn_inherit_from_theme', 'disabled' ),
 			'social'                             => \UAGB_Admin_Helper::get_admin_settings_option(
 				'uag_social',
 				array(

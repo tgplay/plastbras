@@ -10,10 +10,11 @@
 // Adds Fonts.
 UAGB_Block_JS::blocks_image_gallery_gfont( $attr );
 
-$block_name = 'image-gallery';
-
 // Arrow & Dots Default Color Fallback ( Not from Theme ).
 $arrow_dot_color = $attr['paginateColor'] ? $attr['paginateColor'] : '#007cba';
+
+// Block Visibility Based on Layout Type.
+$hide_this_block = in_array( $attr['feedLayout'], array( 'carousel', 'masonry' ), true );
 
 // Range Fallback.
 $paginate_dot_distance_fallback = is_numeric( $attr['paginateDotDistance'] ) ? $attr['paginateDotDistance'] : 0;
@@ -70,13 +71,14 @@ $selectors = array(
 	// Feed Selectors.
 
 	'.wp-block-uagb-image-gallery'                       => array(
-		'padding' => UAGB_Block_Helper::generate_spacing(
+		'padding'    => UAGB_Block_Helper::generate_spacing(
 			$attr['feedMarginUnit'],
 			$attr['feedMarginTop'],
 			$attr['feedMarginRight'],
 			$attr['feedMarginBottom'],
 			$attr['feedMarginLeft']
 		),
+		'visibility' => $hide_this_block ? 'hidden' : '',
 	),
 
 	// Control Settings.
@@ -304,7 +306,7 @@ $selectors = array(
 	),
 	' .spectra-image-gallery__media-wrapper:hover .spectra-image-gallery__media-thumbnail-caption--bar-inside' => array(
 		'background-color' => ( 'antiHover' === $attr['captionVisibility'] ) ? 'rgba(0,0,0,0)' : ( ( 'always' === $attr['captionVisibility'] && $attr['captionSeparateColors'] ) ? $attr['captionBackgroundColorHover'] : $attr['captionBackgroundColor'] ),
-		'border-color'     => ( 'antiHover' === $attr['captionVisibility'] ) ? 'rgba(0,0,0,0)' : ( ( 'always' === $attr['captionVisibility'] && $attr['captionSeparateColors'] ) ? $attr['mainTitleBorderHColor'] : $attr['mainTitleBorderColor'] ),
+		'border-color'     => ( 'antiHover' === $attr['captionVisibility'] ) ? 'rgba(0,0,0,0)' : ( ( 'antiHover' !== $attr['captionVisibility'] ) ? $attr['mainTitleBorderHColor'] : $attr['mainTitleBorderColor'] ),
 	),
 	' .spectra-image-gallery__media-thumbnail-caption--bar-outside' => array_merge(
 		array(
