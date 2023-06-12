@@ -15,8 +15,13 @@
  * @version     4.7.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
+if (! defined('ABSPATH')) {
+    exit; // Exit if accessed directly.
 }
 
-wc_get_template( 'archive-product.php' );
+// if (class_exists('\Elementor\Plugin')) {
+//     echo \Elementor\Plugin::instance()->frontend->get_builder_content(1303);
+// }
+
+// echo the_title();
+wc_get_template('archive-product.php');

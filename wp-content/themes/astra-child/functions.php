@@ -46,3 +46,22 @@ function custom_product_pagination()
 }
 
 add_action('wp_enqueue_scripts', 'child_enqueue_styles', 15);
+
+
+function header_custom(){
+    if (class_exists('\Elementor\Plugin')) {
+        echo \Elementor\Plugin::instance()->frontend->get_builder_content(1303);
+    }
+}
+add_action('woocommerce_before_main_content', 'header_custom', 5);
+
+function footer_custom(){
+    if (class_exists('\Elementor\Plugin')) {
+        echo \Elementor\Plugin::instance()->frontend->get_builder_content(661);
+    }
+}
+add_action('woocommerce_after_main_content', 'footer_custom', 30);
+
+
+
+
