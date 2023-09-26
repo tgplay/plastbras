@@ -18,24 +18,26 @@
  * @package WordPress
  */
 
+ini_set('memory_limit', '128M');
+
 // ** Configurações do banco de dados - Você pode pegar estas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
-define( 'DB_NAME', 'plastbras' );
+define('DB_NAME', 'plastbras');
 
 /** Usuário do banco de dados MySQL */
-define( 'DB_USER', 'root' );
+define('DB_USER', 'root');
 
 /** Senha do banco de dados MySQL */
-define( 'DB_PASSWORD', 'senha' );
+define('DB_PASSWORD', 'senha');
 
 /** Nome do host do MySQL */
-define( 'DB_HOST', 'localhost' );
+define('DB_HOST', 'localhost');
 
 /** Charset do banco de dados a ser usado na criação das tabelas. */
-define( 'DB_CHARSET', 'utf8' );
+define('DB_CHARSET', 'utf8');
 
 /** O tipo de Collate do banco de dados. Não altere isso se tiver dúvidas. */
-define( 'DB_COLLATE', '' );
+define('DB_COLLATE', '');
 
 
 /**#@+
@@ -51,14 +53,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'coloque a sua frase única aqui' );
-define( 'SECURE_AUTH_KEY',  'coloque a sua frase única aqui' );
-define( 'LOGGED_IN_KEY',    'coloque a sua frase única aqui' );
-define( 'NONCE_KEY',        'coloque a sua frase única aqui' );
-define( 'AUTH_SALT',        'coloque a sua frase única aqui' );
-define( 'SECURE_AUTH_SALT', 'coloque a sua frase única aqui' );
-define( 'LOGGED_IN_SALT',   'coloque a sua frase única aqui' );
-define( 'NONCE_SALT',       'coloque a sua frase única aqui' );
+define('AUTH_KEY', 'coloque a sua frase única aqui');
+define('SECURE_AUTH_KEY', 'coloque a sua frase única aqui');
+define('LOGGED_IN_KEY', 'coloque a sua frase única aqui');
+define('NONCE_KEY', 'coloque a sua frase única aqui');
+define('AUTH_SALT', 'coloque a sua frase única aqui');
+define('SECURE_AUTH_SALT', 'coloque a sua frase única aqui');
+define('LOGGED_IN_SALT', 'coloque a sua frase única aqui');
+define('NONCE_SALT', 'coloque a sua frase única aqui');
 
 
 /**#@-*/
@@ -84,7 +86,7 @@ $table_prefix = 'wp_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', false );
+define('WP_DEBUG', false);
 
 /* Adicione valores personalizados entre esta linha até "Isto é tudo". */
 define('FS_METHOD', 'direct');
@@ -93,8 +95,8 @@ define('FS_METHOD', 'direct');
 /* Isto é tudo, pode parar de editar! :) */
 
 /** Caminho absoluto para o diretório WordPress. */
-if ( ! defined( 'ABSPATH' ) ) {
-	define( 'ABSPATH', __DIR__ . '/' );
+if (! defined('ABSPATH')) {
+    define('ABSPATH', __DIR__ . '/');
 }
 
 /** Configura as variáveis e arquivos do WordPress. */

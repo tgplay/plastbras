@@ -1,0 +1,2 @@
+2023-09-23T20:24:30+00:00 CRITICAL Allowed memory size of 41943040 bytes exhausted (tried to allocate 471040 bytes) in /var/www/plastbras/wp-includes/class-wpdb.php on line 1317
+
